@@ -1,0 +1,31 @@
+[2021-10-03 01:27:14,339] {taskinstance.py:903} INFO - Dependencies all met for <TaskInstance: my_dag.Not_Accurate 2021-10-03T01:27:10.863529+00:00 [queued]>
+[2021-10-03 01:27:14,360] {taskinstance.py:903} INFO - Dependencies all met for <TaskInstance: my_dag.Not_Accurate 2021-10-03T01:27:10.863529+00:00 [queued]>
+[2021-10-03 01:27:14,361] {taskinstance.py:1095} INFO - 
+--------------------------------------------------------------------------------
+[2021-10-03 01:27:14,362] {taskinstance.py:1096} INFO - Starting attempt 1 of 1
+[2021-10-03 01:27:14,363] {taskinstance.py:1097} INFO - 
+--------------------------------------------------------------------------------
+[2021-10-03 01:27:14,372] {taskinstance.py:1115} INFO - Executing <Task(BashOperator): Not_Accurate> on 2021-10-03T01:27:10.863529+00:00
+[2021-10-03 01:27:14,380] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'my_dag', 'Not_Accurate', '2021-10-03T01:27:10.863529+00:00', '--job-id', '82', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/my_dag.py', '--cfg-path', '/tmp/tmp9zew0ge8', '--error-file', '/tmp/tmpmvebjong']
+[2021-10-03 01:27:14,376] {standard_task_runner.py:52} INFO - Started process 25951 to run task
+[2021-10-03 01:27:14,382] {standard_task_runner.py:77} INFO - Job 82: Subtask Not_Accurate
+[2021-10-03 01:27:14,437] {logging_mixin.py:109} INFO - Running <TaskInstance: my_dag.Not_Accurate 2021-10-03T01:27:10.863529+00:00 [running]> on host d6b4131456ad
+[2021-10-03 01:27:14,497] {taskinstance.py:1254} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=my_dag
+AIRFLOW_CTX_TASK_ID=Not_Accurate
+AIRFLOW_CTX_EXECUTION_DATE=2021-10-03T01:27:10.863529+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-10-03T01:27:10.863529+00:00
+[2021-10-03 01:27:14,500] {subprocess.py:52} INFO - Tmp dir root location: 
+ /tmp
+[2021-10-03 01:27:14,503] {subprocess.py:63} INFO - Running command: ['bash', '-c', "printf '============\n\nNot Accurate\n\n=============' "]
+[2021-10-03 01:27:14,513] {subprocess.py:74} INFO - Output:
+[2021-10-03 01:27:14,514] {subprocess.py:78} INFO - ============
+[2021-10-03 01:27:14,515] {subprocess.py:78} INFO - 
+[2021-10-03 01:27:14,516] {subprocess.py:78} INFO - Not Accurate
+[2021-10-03 01:27:14,516] {subprocess.py:78} INFO - 
+[2021-10-03 01:27:14,517] {subprocess.py:78} INFO - =============
+[2021-10-03 01:27:14,518] {subprocess.py:82} INFO - Command exited with return code 0
+[2021-10-03 01:27:14,550] {taskinstance.py:1219} INFO - Marking task as SUCCESS. dag_id=my_dag, task_id=Not_Accurate, execution_date=20211003T012710, start_date=20211003T012714, end_date=20211003T012714
+[2021-10-03 01:27:14,599] {local_task_job.py:151} INFO - Task exited with return code 0
+[2021-10-03 01:27:14,626] {local_task_job.py:261} INFO - 0 downstream tasks scheduled from follow-on schedule check
